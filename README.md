@@ -1,6 +1,6 @@
 # docker-phreeze
 
-!(http://phreeze.com/assets/phreeze.png)[http://phreeze.com/assets/phreeze.png]
+![http://phreeze.com/assets/phreeze.png](http://phreeze.com/assets/phreeze.png)
 
 Installation of http://phreeze.com in a docker container running in apache with php5 with mysql drivers and modrewrite enabled.
 
