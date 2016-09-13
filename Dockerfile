@@ -9,3 +9,6 @@ RUN \
  sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 
 RUN docker-php-ext-install mysql mysqli pdo pdo_mysql
+
+RUN git clone git://github.com/jasonhinkle/phreeze.git
+
