@@ -2,7 +2,7 @@ FROM php:5-apache
 
 RUN \
  apt-get update && \
- apt-get install -y vim telnet wget axel php5-mysqlnd
+ apt-get install -y vim telnet wget axel php5-mysqlnd git
 
 RUN \
  a2enmod rewrite && \
