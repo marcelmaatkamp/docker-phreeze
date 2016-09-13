@@ -6,4 +6,4 @@ To start:
 ```
 $ docker-compose up -d
 ```
-and goto http://localhost/phreeze
+and goto http://localhost:80/phreeze/
