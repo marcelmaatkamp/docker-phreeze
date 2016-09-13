@@ -1,10 +1,12 @@
-[![phreeze](http://phreeze.com/assets/video-5DCZAqDo4zQ.jpg)](https://www.youtube.com/watch?v=5DCZAqDo4zQ)
 # docker-phreeze
 
-## Installation
-Installation of http://phreeze.com in a docker container running in apache with php5 with mysql drivers and modrewrite enabled.
+## Introduction video about phreeze
+[![phreeze](http://phreeze.com/assets/video-5DCZAqDo4zQ.jpg)](https://www.youtube.com/watch?v=5DCZAqDo4zQ)
 
-## Start the docker instance
+## About 
+Installation of http://phreeze.com in a docker container running in apache with php5 with mysql drivers and modrewrite enabled. 
+
+## Installation
 To start you can use docker-compose to build and start the container:
 ```
 $ docker-compose up -d
