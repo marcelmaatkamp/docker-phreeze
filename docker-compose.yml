@@ -1,0 +1,26 @@
+version: '2'
+services:
+
+ mysql:
+  image: mysql/mysql-server:latest
+  restart: always
+  hostname: mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=my-secret-pw
+  volumes:
+   - mysql:/var/lib/mysql
+
+ phreeze:
+  build: .
+  hostname: phreeze
+  depends_on:
+   - mysql
+  links:
+   - mysql:mysql
+# volumes:
+#  - ./volumes/phreeze/showcase:/var/www/html/showcase
+  ports:
+   - 80:80
+
+volumes:
+ mysql:
