@@ -3,8 +3,8 @@
 
 Installation of http://phreeze.com in a docker container running in apache with php5 with mysql drivers and modrewrite enabled.
 
-To start:
+To start you can use docker-compose to build and start the container:
 ```
 $ docker-compose up -d
 ```
-and goto http://127.0.0.1/phreeze/
+and goto http://127.0.0.1/phreeze to view the demo site. 
