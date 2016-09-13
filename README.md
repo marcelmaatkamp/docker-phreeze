@@ -28,6 +28,7 @@ COPY src/ my_new_project
 ```
 and to view start this container:
 ```
-$ docker build -t my_new_project && docker run --name my_new_project -p 80:80 my_new_project
+$ docker build -t my_new_project . && \
+  docker run --name my_new_project -p 80:80 my_new_project
 ```
 and goto http://127.0.0.1/my_new_project to view it.
