@@ -21,12 +21,12 @@ $ git clone https://github.com/marcelmaatkamp/docker-phreeze.git && \
 and goto http://127.0.0.1//phreeze/builder/ to view the demo site with the connected mysql database.
 
 ## Development
-Use phreeze to generate your site and place in into a seperate directory. Use your own Dockerfile to add these files in a new container:
+Use phreeze to generate your site and place in into a seperate directory like src/ and use your own Dockerfile to add these files into a new container like this:
 ```
 FROM marcelmaatkamp/phreeze
 COPY src/ my_new_project
 ```
-and to view start this container:
+and to view, start this container:
 ```
 $ docker build -t my_new_project . && \
   docker run --name my_new_project -p 80:80 my_new_project
