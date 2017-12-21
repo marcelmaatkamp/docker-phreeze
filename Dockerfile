@@ -1,8 +1,9 @@
-FROM php:5-apache
+FROM php:5.6.30-apache
 
 RUN \
  apt-get update && \
- apt-get install -y vim telnet wget axel php5-mysql git
+ apt-get install -y vim telnet wget axel php5-mysqlnd git &&\
+ rm -rf /var/lib/apt/lists/*
 
 RUN \
  a2enmod rewrite && \
